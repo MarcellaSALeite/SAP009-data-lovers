@@ -37,6 +37,8 @@ orderList.addEventListener("change",(event) => {
 });
 
 
+const calculoAgrgado = document.querySelector("#Name")
+
 
 
  
