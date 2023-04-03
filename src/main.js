@@ -1,4 +1,3 @@
-
 import data from './data/pokemon/pokemon.js';
 import { buscarTipo, order } from './data.js';
 
@@ -35,6 +34,7 @@ orderList.addEventListener("change",(event) => {
    const ordenado = order(cards,parametroOrdenar);
   pokeCards(ordenado);
 });
+
 
 
 
