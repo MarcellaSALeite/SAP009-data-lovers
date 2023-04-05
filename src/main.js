@@ -1,5 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-import { buscarTipo, order } from './data.js';
+import { buscarTipo, order, CalculoAgreg } from './data.js';
 
 const cards = data.pokemon;
 const showcards = document.getElementById('cards');
@@ -19,19 +19,21 @@ function pokeCards(listaPokemon) {
 }
 pokeCards(cards);
 
-
+const calculo = document.querySelector("#calculo")
 
 const filtroSelect = document.querySelector("#Filtrar");
-filtroSelect.addEventListener("change",(event) => {
+filtroSelect.addEventListener("change",() => {
   const parametroFiltro = filtroSelect.value;  
   const listfilter = buscarTipo(cards,parametroFiltro);
-    pokeCards(listfilter);
+  pokeCards(listfilter);
+  const porcentagem = CalculoAgreg (cards,listfilter)
+  calculo.innerHTML = `O número de pokemons desse tipo é ${listfilter.length}, equivale a ${porcentagem}% dos cards!`
 });
 
 const orderList = document.querySelector("#Ordenar");
-orderList.addEventListener("change",(event) => {
+orderList.addEventListener("change",() => {
   const parametroOrdenar = orderList.value;
-   const ordenado = order(cards,parametroOrdenar);
+  const ordenado = order(cards,parametroOrdenar);
   pokeCards(ordenado);
 });
 

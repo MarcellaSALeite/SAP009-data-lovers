@@ -33,9 +33,10 @@
         <img src="kawax-pokeball-3097.png" width="120" height="120" />
        </div>
 
-      
+       
               
         <select name="categorias" id="Filtrar">
+        <option>TIPO</option>
         <option value="grass">Grass</option>
         <option value="fire">Fire</option>
         <option value="water">Water</option>
@@ -54,16 +55,18 @@
         <option value="ghost">Ghost</option>
         </select>
        
-        <input id="Name" class="Name" placeholder="Ex: Pikachu">
-      
-      <select name="Ordenar" id="Ordenar">
-       <option value="A-Z" >A-Z</option>
-       <option value="Z-A">Z-A</option>
+             
+      <select name="Ordenar" id="Ordenar" placeholder=" Ordenar">
+       <option>ORDENAR</option>
+       <option value="a-z" >A-Z</option>
+       <option value="z-a">Z-A</option>
       </select>
-   
+
+      <div id="calculo"></div>
 
       <div id="cards"></div>
 
+     
      
     <script src="main.js" type="module"></script>
   </body>
