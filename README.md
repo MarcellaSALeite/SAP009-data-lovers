@@ -38,6 +38,6 @@ Exibimos também uma parametro que ao utilizar o filtro de tipagem o usuário sa
 
 ## 5. Desenvolvido por
 
-Marcella Leite
+Marcella Leite  e
 Letícia Porciuncula
 
