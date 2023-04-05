@@ -10,6 +10,8 @@
 
 ***
 
+Link para o site https://marcellasaleite.github.io/SAP009-data-lovers/src/
+
 ## 1. Introdução
 
 Pokémon é uma franquia de mídia que pertence a The Pokémon Company, tendo sido criada por Satoshi Tajiri em 1995.
